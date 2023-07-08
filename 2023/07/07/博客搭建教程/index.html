@@ -363,16 +363,16 @@
                     
                     <div class="article-tag">
                         
+                            <a href="/tags/Hexo/">
+                                <span class="chip bg-color">Hexo</span>
+                            </a>
+                        
                             <a href="/tags/Typora/">
                                 <span class="chip bg-color">Typora</span>
                             </a>
                         
                             <a href="/tags/github/">
                                 <span class="chip bg-color">github</span>
-                            </a>
-                        
-                            <a href="/tags/Hexo/">
-                                <span class="chip bg-color">Hexo</span>
                             </a>
                         
                     </div>
@@ -434,7 +434,7 @@
 <p>可以套用知名主题，主题渲染后总体效果出色，相较于个人纯手写网站简单实用</p>
 <p>（别问，问就是博主我手写过网站QAQ）</p>
 <p><a target="_blank" rel="noopener" href="http://tcs.svvs.top/">博主的纯手写网站</a> 一个贪吃蛇游戏，可以点开娱乐一下</p>
-<p><img src="https://raw.githubusercontent.com/WangLight/blog_img/master/imagesimage-20230708123732339.png" alt="如图，手写要自己搭建并上传"></p>
+<p><img src="https://blogtp.oss-cn-hangzhou.aliyuncs.com/Typora_img/imagesimage-20230708123732339.png" alt="如图，手写要自己搭建并上传"></p>
 </li>
 <li><p>缺点</p>
 <p>图片的插入是本地路径，上传到博客网页上无法访问本地图片，图片丢失；</p>
@@ -444,14 +444,14 @@
 </ul>
 <h2 id="2、How搭建个人博客-手把手保姆教学"><a href="#2、How搭建个人博客-手把手保姆教学" class="headerlink" title="2、How搭建个人博客(手把手保姆教学)"></a>2、How搭建个人博客(手把手保姆教学)</h2><h5 id="第一步-github配置"><a href="#第一步-github配置" class="headerlink" title="第一步 github配置"></a>第一步 github配置</h5><ul>
 <li><p>首先需要一个<a target="_blank" rel="noopener" href="https://github.com/">github</a>账号 如果没有可以去注册一个 </p>
-<div style="display:inline-block;"><img src="https://raw.githubusercontent.com/WangLight/blog_img/master/imagesimage-20230708145639367.png" style="float:left;"/></div>
+<div style="display:inline-block;"><img src="https://blogtp.oss-cn-hangzhou.aliyuncs.com/Typora_img/imagesimage-20230708145639367.png" style="float:left;"/></div>
 </li>
 <li><p>注册或登陆后在右上角 <strong>+</strong> 号处新建一个仓库（New repository）</p>
-<div style="display:inline-block;"><img src="https://raw.githubusercontent.com/WangLight/blog_img/master/imagesimage-20230708154202958.png" style="zoom:80%;" style="float:left;"/></div>
+<div style="display:inline-block;"><img src="https://blogtp.oss-cn-hangzhou.aliyuncs.com/Typora_img/imagesimage-20230708154202958.png" style="float:left;"/></div>
 </li>
 <li><p><strong>注意</strong> 仓库名称应和你的github用户名相同 是你注册的那个不是昵称！比如说我的用户名是WangLight 我的仓库名就是WangLight .github.io</p>
 <p>同时选择Public 不然给谁看呢     我这里是仓库创建过了，所以提示已被创建，你们不会出现此状况</p>
-<div style="display:inline-block;"><img src="https://raw.githubusercontent.com/WangLight/blog_img/master/imagesimage-20230708154836805.png"  style="zoom:80%;" style="float:left;"/></div>
+<div style="display:inline-block;"><img src="https://blogtp.oss-cn-hangzhou.aliyuncs.com/Typora_img/imagesimage-20230708154836805.png" style="zoom:80%;" style="float:left;"/></div>
 
 <p>如果你按照步骤来，那么我们的仓库就建好了</p>
 </li>
@@ -466,7 +466,7 @@
 </li>
 <li><p>新建一个文件夹取名blog（博客）</p>
 <p><strong>右键 Git Bash Here 我们以后的命令(神秘代码)都在这里运行</strong></p>
-<p><img src="https://raw.githubusercontent.com/WangLight/blog_img/master/imagesimage-20230708163103558.png"></p>
+<p><img src="https://blogtp.oss-cn-hangzhou.aliyuncs.com/Typora_img/imagesimage-20230708163103558.png"></p>
 </li>
 <li><p>连接github</p>
 <p>绑定邮箱账号(<strong>目的是使当前文件夹可以连接到github</strong>)</p>
@@ -476,17 +476,17 @@ git config --global user.email "GitHub 邮箱"</code></pre>
 <p>生成ssh密钥</p>
 <pre class="language-latex" data-language="latex"><code class="language-latex">ssh-keygen -t rsa -C "GitHub 邮箱"</code></pre>
 
-<p><img src="https://raw.githubusercontent.com/WangLight/blog_img/master/imagesimage-20230708164012084.png"></p>
+<p><img src="https://blogtp.oss-cn-hangzhou.aliyuncs.com/Typora_img/imagesimage-20230708164012084.png"></p>
 <p>  进入用户名下的.ssh文件夹（windows：C:\Users\用户名.ssh）可能是隐藏文件，需要打开显示隐藏文件</p>
 <p>  用记事本打开id_rsa.pub拷贝其中内容</p>
 <p>  打开<a target="_blank" rel="noopener" href="https://github.com/settings/keys">github的ssh设置</a> 新建ssh密钥 (我已经细节到链接都给你们了)</p>
 <p>  ​把 id_rsa.pub 内容粘贴到 Key 中 点击 Add SSH key 完成添加</p>
-<p><img src="https://raw.githubusercontent.com/WangLight/blog_img/master/imagesimage-20230708165500843.png"></p>
+<p><img src="https://blogtp.oss-cn-hangzhou.aliyuncs.com/Typora_img/imagesimage-20230708165500843.png"></p>
 </li>
 <li><p>验证安装绑定成功与否</p>
 <pre class="language-none"><code class="language-none">ssh -T git@github.com</code></pre>
 
-<p>successfully 即为成功<br><img src="https://raw.githubusercontent.com/WangLight/blog_img/master/imagesimage-20230708170215175.png"></p>
+<p>successfully 即为成功<br><img src="https://blogtp.oss-cn-hangzhou.aliyuncs.com/Typora_img/imagesimage-20230708170215175.png"></p>
 </li>
 </ul>
 <h5 id="第三步-安装Hexo"><a href="#第三步-安装Hexo" class="headerlink" title="第三步 安装Hexo"></a>第三步 安装Hexo</h5><ul>
@@ -498,7 +498,7 @@ npm install -g hexo-cli</code></pre>
 <pre class="language-none"><code class="language-none">hexo init 
 npm install
 npm install hexo-deployer-git --save</code></pre>
-<p><img src="https://raw.githubusercontent.com/WangLight/blog_img/master/imagesimage-20230708170956226.png"></p>
+<p><img src="https://blogtp.oss-cn-hangzhou.aliyuncs.com/Typora_img/imagesimage-20230708170956226.png"></p>
 </li>
 <li><p>打开 _config.yml 修改文件末尾：</p>
 <pre class="language-latex" data-language="latex"><code class="language-latex">deploy:
@@ -507,14 +507,14 @@ npm install hexo-deployer-git --save</code></pre>
   branch: master</code></pre>
 
 <p>这里我用的是master分支 所以将页面改为master  你们可能是main 保持一致即可</p>
-<p><img src="https://raw.githubusercontent.com/WangLight/blog_img/master/imagesimage-20230708171538257.png"></p>
+<p><img src="https://blogtp.oss-cn-hangzhou.aliyuncs.com/Typora_img/imagesimage-20230708171538257.png"></p>
 </li>
 <li><p>生成测试页面</p>
 <pre class="language-python" data-language="python"><code class="language-python">hexo g      <span class="token comment">#生成页面</span>
 hexo s      <span class="token comment">#本地预览</span></code></pre>
 
 <p>浏览器打开<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> 就可以看到hexo的初始界面了</p>
-<p><img src="https://raw.githubusercontent.com/WangLight/blog_img/master/imagesR.849497e62bfdd93ea6dafb88d39af53e"></p>
+<p><img src="https://blogtp.oss-cn-hangzhou.aliyuncs.com/Typora_img/image-20230708214207702.png"></p>
 </li>
 <li><p>上传页面</p>
 <pre class="language-latex" data-language="latex"><code class="language-latex">hexo d</code></pre>
@@ -524,10 +524,10 @@ hexo s      <span class="token comment">#本地预览</span></code></pre>
 </ul>
 <h2 id="3、我的博客编写"><a href="#3、我的博客编写" class="headerlink" title="3、我的博客编写"></a>3、我的博客编写</h2><ul>
 <li><p>如图所示，我的博客就是用<strong>Typora</strong>编写的Markdown文件</p>
-<p><img src="https://raw.githubusercontent.com/WangLight/blog_img/master/imagesimage-20230708173043123.png"></p>
+<p><img src="https://blogtp.oss-cn-hangzhou.aliyuncs.com/Typora_img/imagesimage-20230708173043123.png"></p>
 </li>
 <li><p>如何上传博客文章</p>
-<p><img src="https://raw.githubusercontent.com/WangLight/blog_img/master/imagesimage-20230708173326262.png"></p>
+<p><img src="https://blogtp.oss-cn-hangzhou.aliyuncs.com/Typora_img/imagesimage-20230708173326262.png"></p>
 <p>在你的blog目录下的source文件夹再点开_posts文件，里面存储的就是你的博客文章</p>
 </li>
 <li><p>光速发表博客 （在blog目录下   右键 Git Bash Here ）</p>
@@ -608,16 +608,16 @@ hexo d		<span class="token comment">#最终上传你的博客文章</span></code
                     
                         <div class="article-tag">
                             
+                                <a href="/tags/Hexo/">
+                                    <span class="chip bg-color">Hexo</span>
+                                </a>
+                            
                                 <a href="/tags/Typora/">
                                     <span class="chip bg-color">Typora</span>
                                 </a>
                             
                                 <a href="/tags/github/">
                                     <span class="chip bg-color">github</span>
-                                </a>
-                            
-                                <a href="/tags/Hexo/">
-                                    <span class="chip bg-color">Hexo</span>
                                 </a>
                             
                         </div>
@@ -784,16 +784,16 @@ hexo d		<span class="token comment">#最终上传你的博客文章</span></code
                 
                 <div class="card-action article-tags">
                     
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
+                    </a>
+                    
                     <a href="/tags/Typora/">
                         <span class="chip bg-color">Typora</span>
                     </a>
                     
                     <a href="/tags/github/">
                         <span class="chip bg-color">github</span>
-                    </a>
-                    
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
                     </a>
                     
                 </div>
